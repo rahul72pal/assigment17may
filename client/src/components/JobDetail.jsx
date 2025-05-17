@@ -9,7 +9,7 @@ export default function JobDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/api/jobs/${id}`)
+    axios.get(`https://assigment17may.onrender.com/api/jobs/${id}`)
       .then(res => {
         setJob(res.data);
         setLoading(false);

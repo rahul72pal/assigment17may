@@ -20,7 +20,7 @@ export default function AddJob() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/jobs', form);
+      await axios.post('https://assigment17may.onrender.com/api/jobs', form);
       navigate('/');
     } catch (error) {
       console.error(error);

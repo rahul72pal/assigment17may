@@ -6,7 +6,7 @@ export default function JobList() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/jobs')
+    axios.get('https://assigment17may.onrender.com/api/jobs')
       .then(res => setJobs(res.data))
       .catch(err => console.error(err));
   }, []);
